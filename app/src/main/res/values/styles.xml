@@ -1,0 +1,24 @@
+<resources>
+
+    <style name="Button" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">@dimen/grid_2</item>
+        <item name="rippleColor">?attr/colorPrimaryVariant</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:textColor">?attr/colorSurface</item>
+    </style>
+
+    <style name="OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="cornerRadius">@dimen/grid_2</item>
+        <item name="rippleColor">?attr/colorPrimaryVariant</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:backgroundTint">?colorSurface</item>
+    </style>
+
+    <style name="Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="titleTextColor">?attr/colorOnSurface</item>
+        <item name="titleTextAppearance">?attr/textAppearanceHeadline5</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+    </style>
+
+</resources>

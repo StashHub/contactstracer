@@ -1,0 +1,235 @@
+<resources>
+    <string name="app_name">Contacts Tracer</string>
+
+    <!-- Survey -->
+    <string name="survey_title">COVID\-19 self assessment</string>
+    <string name="survey_caption">This resource can help you decide what kind of medical care you might need for COVID\‑19.\n\nLet\'s all look out for each other by knowing our status, trying not to infect others, and reserving care for those in need.</string>
+    <string name="start_screening">Start Screening</string>
+    <string name="screening_title">COVID\-19 Screening Tool</string>
+    <string name="screening_info">You\'ll answer a few questions about symptoms, travel, and contact you’ve had with others.</string>
+    <string name="screening_share">Your answers will not be shared with Contacts Tracer or any Public Health Official without your permission.</string>
+    <string name="screening_usage">By using this tool, you agree to its terms and that Contacts Tracer will not be liable for any harm relating to your use.</string>
+    <string name="screening_recommendation">Recommendations provided by this tool do not constitute medical advice and should not be used to diagnose or treat medical conditions.</string>
+    <string name="i_agree">I agree</string>
+
+    <string name="emergency_title">If this is an emergency, stop and call 911</string>
+    <string name="emergency_message"> <![CDATA[
+    <li>&nbsp;&nbsp;Constant chest pain or pressure</li>\n
+    <li>&nbsp;&nbsp;Severe difficulty breathing</li>\n
+    <li>&nbsp;&nbsp;Severe shortness of breath</li>\n
+    <li>&nbsp;&nbsp;Severe, constant dizziness</li>\n
+    <li>&nbsp;&nbsp;Slurred speech</li>\n
+    <li>&nbsp;&nbsp;Extreme difficulty waking up</li>\n
+    <li>&nbsp;&nbsp;Any other life-threatening symptoms</li>
+      ]]>
+    </string>
+
+    <string name="recommend_contact_provider_1">Protect yourself and others</string>
+    <string name="recommend_contact_provider_2">Monitor symptoms</string>
+    <string name="recommend_contact_provider_3">Testing not recommended</string>
+    <string name="recommend_contact_provider_4">Refill medications</string>
+
+    <!-- Questions -->
+    <string name="age_question">How old is the person you\'re answering these questions for\?</string>
+    <string name="symptoms_question">Do you have any of these symptoms\?</string>
+    <string name="select_all_that_apply">Select all that apply</string>
+    <string name="healthcare_question">Do you work or volunteer in a healthcare setting, or plan to in the next 2 weeks\?</string>
+    <string name="healthcare_question_caption">Such as a hospital\, nursing home\, long\-term care facility, or first\-responder service</string>
+    <string name="last_2wks_question">In the last 2 weeks, did you\:</string>
+    <string name="care_facility_question">Do you live in a care facility\?</string>
+    <string name="care_facility_caption">Nursing home, assisted living or long-term care facility</string>
+    <string name="conditions_question">Do you have any of these conditions\?</string>
+
+    <!-- Answers -->
+    <string name="age_question_17_under_answer">Under 18</string>
+    <string name="age_question_18_64_answer">Between 18 and 64</string>
+    <string name="age_question_65_up_answer">65 or older</string>
+
+    <string name="under_18_title">This tool is intended for people who are at least 18 years old</string>
+    <string name="under_18_caption">Visit the CDC site to get information about COVID‑19 and younger people.</string>
+
+    <string name="result_protect_yourself_title">Protect yourself and others by keeping a safe distance</string>
+    <string name="result_protect_yourself_caption">Keep 6 feet of space between yourself and others outside of your home</string>
+
+    <string name="result_stay_home_title">Protect yourself and others by staying home</string>
+    <string name="result_stay_home_caption">Stay home for 14 days</string>
+
+    <string name="result_contact_provider_title">Contact your occupational healthcare provider</string>
+    <string name="result_contact_provider_caption">Tell them about your symptoms and ask about getting tested for COVID\‑19</string>
+
+    <string name="symptom_fever_chills">Fever or chills</string>
+    <string name="symptom_diff_breathing">Difficulty breathing</string>
+    <string name="symptom_coughing">New or worsening cough</string>
+    <string name="symptom_appetite">Sustained loss of smell\, taste\, or appetite</string>
+    <string name="symptom_sore_throat">Sore throat</string>
+    <string name="symptom_body_aches">Whole body aches</string>
+    <string name="symptom_vomiting">Vomiting or diarrhea</string>
+    <string name="none_of_the_above">None of the above</string>
+
+    <string name="conditions_lung_disease">Chronic lung disease (Such as COPD, emphysema)</string>
+    <string name="conditions_asthma">Asthma (Moderate to severe)</string>
+    <string name="conditions_heart">Serious heart condition</string>
+    <string name="conditions_diabetes">Diabetes</string>
+    <string name="conditions_cough">Weakened ability to cough</string>
+    <string name="conditions_immune_system">Weakened immune system</string>
+    <string name="conditions_dialysis">Dialysis</string>
+    <string name="conditions_liver_disease">Liver disease</string>
+    <string name="conditions_pregnancy">Pregnancy</string>
+    <string name="conditions_obesity">Severe obesity (Body mass index of 40+)</string>
+
+    <string name="wks_close_contact">Have close contact with someone who has COVID\‑19</string>
+    <string name="wks_travel">Travel internationally</string>
+    <string name="wks_visit">Live in or visit a place where COVID\‑19 is widespread</string>
+
+    <!-- Actions -->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="done">Done</string>
+    <string name="start">Start</string>
+    <string name="finish">Finish</string>
+    <string name="cancel">Cancel</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="Ok">OK</string>
+    <string name="action_continue">Continue</string>
+    <string name="action_help_out">I want to help</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Do your part and help stop the spread of COVID\-19</string>
+    <string name="onboarding_caption_1">Contacts Tracer keeps you and your loved ones safe. We assist you to take the right move in combating COVID\-19 pandemic.</string>
+    <string name="onboarding_note">To protect those around you, Public Health Official may also ask you to share your data</string>
+
+    <string name="onboarding_title_2">Assist in the fight against COVID\-19 by turning Bluetooth on</string>
+    <string name="onboarding_caption_2">People\-driven tracking and trackers to keep one another safe from those affected by the virus.</string>
+    <string name="onboarding_note_2">Your location data stays offline and is shared with a Public Health Official only when there\'s a potential risk.</string>
+
+    <string name="onboarding_permission_title">How Contacts Tracer works</string>
+    <string name="onboarding_permission_caption">We use Bluetooth signals to determine if you are near another Contacts Tracer user.\n\nThis proximity data is encrypted and stored locally on your device.</string>
+
+    <!-- Login -->
+    <string name="login_toolbar_title">Enter Phone number</string>
+    <string name="login_caption">We\'ll contact you if you had close encounter with a COVID\-19 case.</string>
+    <string name="login_statement"><![CDATA[I agree that a Public Health Official can use this phone number and the collected data in the case of a potential risk factor according to the <a href="%1$s">Terms and Conditions</a> to carry out epidemiological investigation.]]></string>
+    <string name="login_verify">Verify</string>
+    <string name="login_verification_code">Verification code</string>
+    <string name="login_phone_number_sms_sent">We sent a verification code to phone number %s.</string>
+    <string name="login_phone_sms_timeout">Verification code will expire in %1$s.</string>
+    <string name="login_code_read_automatically">Verification code was automatically filled from the SMS.</string>
+    <string name="verify_later_desc">Didn\'t receive a OTP? Start using the application and verify your Phone Number later.</string>
+    <string name="verify_later_button">Continue without verifying</string>
+    <string name="login_try_again">Check Phone Number</string>
+    <string name="consent_warning">You consent with the conditions of data processing is necessary to activate the application. Without your consent, the application cannot work properly.</string>
+    <string name="unexpected_error_text">Oops, something went wrong!. Try again later.</string>
+
+    <string name="permission_onboarding_toolbar_title">Permissions</string>
+
+    <!-- Menus -->
+    <string name="menu_item_home">Contacts Tracer</string>
+    <string name="menu_item_data">My Data</string>
+    <string name="menu_item_assessment">Screening</string>
+    <string name="menu_item_delete_data">Delete Data</string>
+    <string name="menu_item_help">Help</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title_running">Contacts Tracer is active</string>
+    <string name="dashboard_title_paused">Contacts Tracer is inactive</string>
+    <string name="dashboard_not_verified_secondary">Please verify your phone number so that we can contact you when there\'s a potential risk.</string>
+    <string name="dashboard_secondary">In case you are tested positive, we will contact you using your phone number provided.</string>
+
+    <!-- My Data -->
+    <string name="send_data">Send data?</string>
+    <string name="data_sent">Sent</string>
+    <string name="please_wait_upload">Data was already sent. You can send it again in %d minutes.</string>
+    <string name="my_data_title">My Data</string>
+    <string name="my_data_description">This is a list of signal measurements of nearby devices with Contacts Tracer in the past %d days. Data does not contain coordinates nor any other personal data. Data can only be sent to a Public Health Official with your consent.</string>
+    <string name="no_data">No Data</string>
+    <string name="no_data_caption">@string/battery_opt_my_data</string>
+
+    <string name="notification_title">Contacts Tracer is active</string>
+    <string name="notification_title_error">Contacts Tracer is inactive</string>
+    <string name="notification_text_bluetooth_disabled">You need to enable Bluetooth to make Contacts Tracer work correctly</string>
+    <string name="notification_text_location_disabled">You need to enable Location Services to make Contacts Tracer work correctly</string>
+    <string name="notification_text_battery_saver_enabled">You need to disable Battery Saver to make Contacts Tracer work correctly</string>
+    <string name="notification_text_paused">Contacts Tracer is inactive. Don\'t forget to reactivate.</string>
+    <string name="notification_action_resume">Resume</string>
+    <string name="notification_text_resumed">Contacts Tracer is active and anonymously monitoring nearby devices.</string>
+    <string name="notification_action_pause">Pause</string>
+    <string name="notification_action_enable_bluetooth">Enable Bluetooth</string>
+    <string name="notification_action_enable_location">Enable Location Services</string>
+    <string name="notification_action_disable_battery_saver">Disable Battery Saver</string>
+    <string name="foreground_service_channel">Background service</string>
+    <string name="foreground_service_alert_channel">Important notifications</string>
+
+    <string name="enable_bluetooth_button">Enable Bluetooth</string>
+    <string name="enable">Enable</string>
+    <string name="bt_disabled_title">Enable Bluetooth</string>
+    <string name="bt_disabled_desc">With Bluetooth disabled, Contacts Tracer cannot monitor your surroundings.\n\nEnable it by pressing \"Enable Bluetooth\".</string>
+    <string name="location_disabled_title">Enable Location Services</string>
+    <string name="location_disabled_desc">Even though we don\'t use Location data, enable them in order for Bluetooth to work properly by using the button \"Enable Location Service\".</string>
+    <string name="enable_location_button">Enable Location Services</string>
+    <string name="bt_location_disabled_title">Enable Permissions</string>
+    <string name="bt_location_disabled_desc">With Bluetooth and Location Services disabled, Contacts Tracer cannot monitor your surroundings.\n\nEven though we don\'t use Location data, please enable both services in order for Bluetooth to work properly by using the button \u201cEnable Permissions\".</string>
+    <string name="enable_bt_location_button">Enable Permissions</string>
+
+    <string name="dashboard_body">Contacts Tracer is actively running in the background.\n</string>
+    <string name="dashboard_body_paused">Contacts Tracer is inactive and is not collecting any data about your surroundings.\n\nActivate Contacts Tracer in order to monitor your surroundings. Remember to keep yourself and others safe.</string>
+    <string name="pause_app">Deactivate Contacts Tracer</string>
+    <string name="start_app">Activate Contacts Tracer</string>
+    <string name="error_ble_unsupported">Your device doesn\'t support Bluetooth LE</string>
+    <string name="permission_onboarding_title">Contacts Tracer needs Bluetooth to function properly</string>
+    <string name="permission_onboarding_desc">Bluetooth is part of Location Services. That\'s why we ask for permission to use Location tracking after you press \"Enable\". Confirm both requests so that the application can function properly.</string>
+    <string name="permission_onboarding_desc_2">You are the only one who can upload the collected data, and only when asked to do so by a Public Health Official.</string>
+
+    <string name="login_desc">Enter your phone number that will be used by a Public Health Official only when there\'s a potential risk.</string>
+    <string name="login_phone_number_input">Phone number</string>
+    <string name="login_finish_activation">Continue</string>
+    <string name="login_code_input">Verification code</string>
+    <string name="login_phone_input_error">Please enter valid phone number</string>
+    <string name="login_code_input_error">Verification code was not entered correctly.</string>
+    <string name="login_network_error">Error contacting server. Check network connection.</string>
+    <string name="login_too_many_attempts_error">Too many phone verification requests. You can try again in a couple of hours.</string>
+    <string name="login_number_already_in_use_error">You cannot use this number.\nPhone number %1$s cannot be used because you have used it for activation on a different device.</string>
+    <string name="login_session_expired">Verification code expired. Check phone number and request a new verification code.</string>
+
+    <string name="permission_rationale_title">The permission for location tracking needs to be granted to allow the application to work properly.</string>
+    <string name="permission_rationale_body">You can find more information about why that is in Help.</string>
+    <string name="permission_rationale_settings">Settings</string>
+    <string name="permission_rationale_dismiss">Dismiss</string>
+
+    <string name="upload_confirmation"><![CDATA[Were you asked by a Public Health Official to send collected data?<br/><br/>Public Health Officials will use the data based on your consent in <a href="%s">conditions of data processing</a>.]]></string>
+    <string name="share_app_title">Share Contacts Tracer</string>
+    <string name="menu_share_app">Share Application</string>
+    <string name="share_app_text">Hi, I\'m using Contacts Tracer. Install it too and together we can help fight the spread of COVID\-19. The application collects anonymous data about nearby devices so that Public Health Official can find potentially positive people more easily. The more we are, the better it works. Application can be found at %s.</string>
+    <string name="delete_data_description">Are you sure you want to delete the data?\n\nPublic Health Officials will not be able to contact potential infected victims in the case you are infected.\n\nAfter deleting your data, Contacts Tracer will be inactive.</string>
+    <string name="delete_data_button">Yes, delete</string>
+    <string name="delete_data">Delete data?</string>
+    <string name="delete_user_desc">Are you sure you want to delete account?\n\nAfter deleting account, we can no longer contact you in the case of a potential risk.\n\nIf you are the one who gets tested positive, we will not be able to contact anybody you encountered.</string>
+    <string name="delete_user_desc_unverified">Are you sure you want to delete account?\n\nAfter deleting account, we can no longer contact you in the case of a potential risk.\n\nBy deleting your account, only the app on this device will be turned off because you didn\'t verify your phone number.</string>
+    <string name="delete_registration">Delete Account?</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="about">About</string>
+    <string name="yes_send">Yes, send</string>
+    <string name="upload_error">Data upload failed. Please try again later.</string>
+    <string name="no_internet">No Internet Connection.</string>
+    <string name="automatic_logout_warning">Your account doesn\'t exist anymore or you were logged out.</string>
+    <string name="delete_data_success_text">All data was deleted and Contacts Tracer is inactive</string>
+    <string name="upload_data_success_description">Thank you for doing your part to fight against the spread of COVID\-19.\n\nPlease coordinate with Public Health Officers to locate people you were in contact with.</string>
+    <string name="delete_user_success_text">Account deleted successfully</string>
+    <string name="disable_battery_saver">Disable Battery Saver</string>
+    <string name="battery_saver_disabled_desc">Contacts Tracer needs to be active in the background, but the phone is turning it off to save battery.\n\nDisable Battery Saver by pressing \"Disable Battery Saver\" in the settings.</string>
+    <string name="battery_opt_title">Contacts Tracer needs to be active even when you are not using it</string>
+    <string name="battery_opt_desc">Your phone is automatically turning off some applications when you are not using them to save battery life.</string>
+    <string name="battery_opt_desc_2">Enable running applications on background in your phone\'s settings. You can find the guide for your phone below.</string>
+    <string name="battery_opt_my_data">Were you in contact with anyone today? Check your phone\'s settings. It\'s possible your phone is disabling the application automatically.</string>
+    <string name="battery_opt_done">Got it</string>
+    <string name="battery_opt_label">Need To Know</string>
+    <string name="guide_for">Guide for %s</string>
+
+    <string name="guide">Guide</string>
+    <string name="data_description">About Data</string>
+
+    <string name="verify_phone_number">Verify Phone</string>
+    <string name="battery_saver_settings_not_found">Disable Battery Saver</string>
+    <string name="data_content_info">Below is a list of signal measurements of nearby devices with Contacts Tracer in the past %d days.</string>
+
+</resources>

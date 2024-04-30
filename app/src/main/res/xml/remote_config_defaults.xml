@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>collection_seconds</key>
+        <value>120</value>
+    </entry>
+
+    <entry>
+        <key>waiting_seconds</key>
+        <value>0</value>
+    </entry>
+
+    <entry>
+        <key>advertise_tx_power</key>
+        <value>3</value>
+    </entry>
+
+    <entry>
+        <key>advertise_mode</key>
+        <value>1</value>
+    </entry>
+
+    <entry>
+        <key>scan_mode</key>
+        <value>1</value>
+    </entry>
+
+    <entry>
+        <key>sms_timeout_seconds</key>
+        <value>120</value>
+    </entry>
+
+    <entry>
+        <key>show_verify_later_timeout</key>
+        <value>30</value>
+    </entry>
+
+    <entry>
+        <key>sms_error_timeout_seconds</key>
+        <value>120</value>
+    </entry>
+
+    <entry>
+        <key>advertise_restart_minutes</key>
+        <value>60</value>
+    </entry>
+
+    <entry>
+        <key>critical_exposition_rssi</key>
+        <value>-75</value>
+    </entry>
+
+    <entry>
+        <key>critical_exposition_minutes</key>
+        <value>-10</value>
+    </entry>
+
+    <entry>
+        <key>upload_waiting_minutes</key>
+        <value>15</value>
+    </entry>
+
+    <entry>
+        <key>persist_data_days</key>
+        <value>14</value>
+    </entry>
+
+    <entry>
+        <key>share_app_dynamic_link</key>
+        <value>https://google.com</value>
+    </entry>
+
+    <entry>
+        <key>proclamation_link</key>
+        <value>https://yahoo.com</value>
+    </entry>
+
+    <entry>
+        <key>terms_and_conditions_link</key>
+        <value>https://reddit.com</value>
+    </entry>
+
+    <entry>
+        <key>show_battery_opt_tutorial</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>allow_verify_later</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>battery_opt_asus_markdown</key>
+        <value>Asus Markdown Text</value>
+    </entry>
+    <entry>
+        <key>battery_opt_huawei_markdown</key>
+        <value>Huawei Markdown Text</value>
+    </entry>
+    <entry>
+        <key>battery_opt_lenovo_markdown</key>
+        <value>Lenovo Markdown Text</value>
+    </entry>
+    <entry>
+        <key>battery_opt_samsung_markdown</key>
+        <value>Samsung Markdown Text</value>
+    </entry>
+    <entry>
+        <key>battery_opt_sony_markdown</key>
+        <value>Sony Markdown Text</value>
+    </entry>
+    <entry>
+        <key>battery_opt_xiaomi_markdown</key>
+        <value>Xiaomi Markdown Text</value>
+    </entry>
+
+    <entry>
+        <key>my_data_text</key>
+        <value>Below is a list of signal measurements of nearby devices with Contacts Tracer in the
+            past %d days.
+        </value>
+    </entry>
+
+</defaultsMap>

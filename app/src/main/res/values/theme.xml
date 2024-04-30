@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <item name="colorSecondaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+        <item name="android:background">@null</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+
+        <item name="toolbarStyle">@style/Toolbar</item>
+        <item name="bottomNavigationStyle">@style/Widget.MaterialComponents.BottomNavigationView
+        </item>
+        <item name="materialButtonOutlinedStyle">@style/OutlinedButton</item>
+        <item name="android:actionMenuTextColor">?attr/colorOnSurface</item>
+
+        <!--Material shape attributes-->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Tracer.SmallComponent
+        </item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Tracer.MediumComponent
+        </item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Tracer.LargeComponent
+        </item>
+
+        <!-- Text appearances -->
+        <!--Material type attributes-->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.Tracer.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.Tracer.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.Tracer.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.Tracer.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.Tracer.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.Tracer.Headline6</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.Tracer.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.Tracer.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.Tracer.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.Tracer.Body2</item>
+        <item name="textAppearanceButton">@style/TextAppearance.Tracer.Button</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.Tracer.Caption</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.Tracer.Overline</item>
+    </style>
+
+    <style name="AppTheme.Launchscreen">
+        <item name="android:background">@drawable/launchscreen</item>
+    </style>
+
+</resources>

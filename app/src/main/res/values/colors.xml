@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2f80ed</color>
+    <color name="colorPrimaryVariant">#2874ed</color>
+    <color name="colorSecondary">#EE225B</color>
+    <color name="colorSurface">@color/white</color>
+    <color name="colorOnSurface">#000</color>
+
+    <color name="textColorPrimary">#000</color>
+    <color name="textColorSecondary">#444</color>
+
+    <color name="white">#fff</color>
+    <color name="red">#ff0000</color>
+    <color name="redDark">#d81d49</color>
+    <color name="green">#029202</color>
+    <color name="orange">#E87013</color>
+    <color name="orange_dim">#F3964E</color>
+
+    <color name="exposition_level_1">#4CAF50</color>
+    <color name="exposition_level_2">#8BC34A</color>
+    <color name="exposition_level_3">#CDDC39</color>
+    <color name="exposition_level_4">#FFEB3B</color>
+    <color name="exposition_level_5">#FFC107</color>
+    <color name="exposition_level_6">#FF9800</color>
+    <color name="exposition_level_7">#FF5722</color>
+    <color name="exposition_level_8">#F44336</color>
+
+    <color name="exposition_level_1_bg">#334CAF50</color>
+    <color name="exposition_level_2_bg">#338BC34A</color>
+    <color name="exposition_level_3_bg">#33CDDC39</color>
+    <color name="exposition_level_4_bg">#33FFEB3B</color>
+    <color name="exposition_level_5_bg">#33FFC107</color>
+    <color name="exposition_level_6_bg">#33FF9800</color>
+    <color name="exposition_level_7_bg">#33FF5722</color>
+    <color name="exposition_level_8_bg">#33F44336</color>
+
+    <color name="header_background">#F3F3F3</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_50_alpha">#80000000</color>
+    <color name="separator_grey">#807A7A7A</color>
+    <color name="disabled_grey">#807A7A7A</color>
+    <color name="pressed_grey">#337A7A7A</color>
+    <color name="hint_grey">#807A7A7A</color>
+    <color name="chevron_color">#3D3D3D</color>
+
+    <color name="cyan_text">#33C5D4</color>
+    <color name="cyan_normal">#3CD0DF</color>
+    <color name="cyan_normal_disabled">#853CD0DF</color>
+
+    <!-- test colors -->
+    <color name="color_primary">#008577</color>
+    <color name="color_primary_dark">#00574B</color>
+    <color name="color_accent">#36BFCC</color>
+</resources>

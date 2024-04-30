@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="parentItem"
+            type="Object" />
+
+        <import type="com.drgayno.contactstracer.util.ColorUtils" />
+
+        <variable
+            name="item"
+            type="com.drgayno.contactstracer.bt.entity.ObservableScanSession" />
+
+        <variable
+            name="viewModel"
+            type="com.drgayno.contactstracer.ui.sandbox.SandboxViewModel" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="@dimen/grid_0_25">
+
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:padding="16dp">-->
+
+        <!--            <ProgressBar-->
+        <!--                android:id="@+id/confirm_progress"-->
+        <!--                style="@style/Widget.AppCompat.ProgressBar.Horizontal"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:max="70"-->
+        <!--                android:progress="@{100 + item.currRssi}"-->
+        <!--                app:layout_constraintTop_toTopOf="parent"-->
+        <!--                app:progressTintResource="@{ColorUtils.INSTANCE.rssiToColor(item.currRssi)}" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/textBuid"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="@{item.observableDeviceId}"-->
+        <!--                android:textColor="@color/textColorSecondary"-->
+        <!--                android:textSize="16sp"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@id/confirm_progress"-->
+        <!--                tools:text="BUID" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/textCurrentRssi"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text='@{String.format("RSSI: %d", item.currRssi)}'-->
+        <!--                android:textSize="20sp"-->
+        <!--                android:textStyle="bold"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@id/confirm_progress"-->
+        <!--                app:textColorResource="@{ColorUtils.INSTANCE.rssiToColor(item.currRssi)}"-->
+        <!--                tools:text="RSSI: -100" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/mac"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginBottom="8dp"-->
+        <!--                android:text='@{String.format("MAC: %s", item.mac)}'-->
+        <!--                android:textAppearance="@style/TextAppearance.MaterialComponents.Overline"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintStart_toStartOf="@+id/textBuid"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/textBuid"-->
+        <!--                tools:text="MAC: 12345" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/gatt"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginBottom="8dp"-->
+        <!--                android:text='@{String.format("Gatt attempt: %s", item.lastGattAttempt)}'-->
+        <!--                android:textAppearance="@style/TextAppearance.MaterialComponents.Overline"-->
+        <!--                app:layout_constraintStart_toStartOf="@+id/mac"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/mac"-->
+        <!--                tools:text="gatt attempt 00:00:00" />-->
+
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+    </androidx.cardview.widget.CardView>
+</layout>

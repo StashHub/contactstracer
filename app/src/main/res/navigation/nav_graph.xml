@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_onboarding_fragment">
+
+    <fragment
+        android:id="@+id/nav_onboarding_fragment"
+        android:name="com.drgayno.contactstracer.ui.onboarding.OnboardingHelpFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_onboarding_help">
+
+        <action
+            android:id="@+id/to_nav_onboarding_prevent"
+            app:destination="@+id/nav_onboarding_fragment_prevent"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <action
+            android:id="@+id/to_nav_dashboard_fragment"
+            app:destination="@id/nav_dashboard_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <argument
+            android:name="fullscreen"
+            android:defaultValue="true"
+            app:argType="boolean" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_onboarding_fragment_prevent"
+        android:name="com.drgayno.contactstracer.ui.onboarding.OnboardingPreventFragment"
+        android:label=""
+        tools:layout="@layout/fragment_onboarding_prevent">
+
+        <action
+            android:id="@+id/to_nav_dashboard_fragment"
+            app:destination="@id/nav_dashboard_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <action
+            android:id="@+id/to_nav_onboarding_permissions"
+            app:destination="@id/nav_onboarding_permissions"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/to_nav_login_fragment"
+            app:destination="@id/nav_login_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/nav_onboarding_fragment_prevent"
+            app:popUpToInclusive="false" />
+        <argument
+            android:name="fullscreen"
+            android:defaultValue="true"
+            app:argType="boolean" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_onboarding_permissions"
+        android:name="com.drgayno.contactstracer.ui.permissions.onboarding.OnboardingPermissionFragment"
+        android:label="@string/permission_onboarding_toolbar_title"
+        tools:layout="@layout/fragment_onboarding_permissions">
+        <action
+            android:id="@+id/to_nav_login_fragment"
+            app:destination="@id/nav_login_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/nav_onboarding_fragment_prevent"
+            app:popUpToInclusive="false" />
+        <argument
+            android:name="fullscreen"
+            android:defaultValue="true"
+            app:argType="boolean" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_login_fragment"
+        android:name="com.drgayno.contactstracer.ui.login.LoginFragment"
+        android:label=""
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/to_nav_dashboard_fragment"
+            app:destination="@id/nav_dashboard_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <argument
+            android:name="fullscreen"
+            android:defaultValue="true"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/to_battery_opt_fragment"
+            app:destination="@id/nav_battery_optimization"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_battery_optimization"
+        android:name="com.drgayno.contactstracer.ui.help.BatteryOptFragment"
+        android:label="@string/battery_opt_label">
+        <action
+            android:id="@+id/to_nav_dashboard_fragment"
+            app:destination="@id/nav_onboarding_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <argument
+            android:name="fullscreen"
+            android:defaultValue="true"
+            app:argType="boolean" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_permissions_disabled"
+        android:name="com.drgayno.contactstracer.ui.permissions.PermissionDisabledFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_permissions_disabled">
+        <action
+            android:id="@+id/to_nav_dashboard_fragment"
+            app:destination="@id/nav_dashboard_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_dashboard_fragment"
+        android:name="com.drgayno.contactstracer.ui.dashboard.DashboardFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/to_nav_permissions_disabled"
+            app:destination="@id/nav_permissions_disabled"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/to_nav_onboarding_fragment"
+            app:destination="@id/nav_onboarding_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/to_nav_login_fragment"
+            app:destination="@id/nav_login_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_data_fragment"
+        android:name="com.drgayno.contactstracer.ui.data.DataFragment"
+        android:label="@string/my_data_title">
+        <action
+            android:id="@+id/to_nav_send_data_fragment"
+            app:destination="@id/nav_send_data"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_delete_data"
+        android:name="com.drgayno.contactstracer.ui.confirm.DeleteDataFragment"
+        android:label="">
+        <action
+            android:id="@+id/to_nav_delete_data_success"
+            app:destination="@id/nav_delete_data_success"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/nav_data_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_delete_user"
+        android:name="com.drgayno.contactstracer.ui.confirm.DeleteUserFragment"
+        android:label="">
+        <action
+            android:id="@+id/to_nav_delete_user_success"
+            app:destination="@id/nav_delete_user_success"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_delete_data_success"
+        android:name="com.drgayno.contactstracer.ui.success.DeleteDataSuccessFragment"
+        android:label="" />
+
+    <fragment
+        android:id="@+id/nav_send_data"
+        android:name="com.drgayno.contactstracer.ui.confirm.SendDataFragment"
+        android:label="">
+        <action
+            android:id="@+id/to_nav_send_data_success"
+            app:destination="@id/nav_send_data_success"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/nav_data_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_delete_user_success"
+        android:name="com.drgayno.contactstracer.ui.success.DeleteUserSuccessFragment"
+        android:label="">
+        <action
+            android:id="@+id/to_nav_onboarding_fragment"
+            app:destination="@id/nav_graph"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="fullscreen"
+            android:defaultValue="true"
+            app:argType="boolean" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_send_data_success"
+        android:name="com.drgayno.contactstracer.ui.success.SendDataSuccessFragment"
+        android:label="@string/data_sent" />
+
+    <fragment
+        android:id="@+id/nav_assessment_fragment"
+        android:name="com.drgayno.contactstracer.ui.surveykit.ui.AssessmentFragment"
+        android:label="@string/menu_item_assessment">
+        <action
+            android:id="@+id/to_nav_survey_fragment"
+            app:destination="@id/nav_survey_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_survey_fragment"
+        android:name="com.drgayno.contactstracer.ui.surveykit.ui.SurveyFragment"
+        android:label=""
+        tools:layout="@layout/fragment_survey">
+
+        <action
+            android:id="@+id/to_nav_assessment_fragment"
+            app:destination="@id/nav_assessment_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <argument
+            android:name="fullscreen"
+            android:defaultValue="true"
+            app:argType="boolean" />
+    </fragment>
+
+
+</navigation>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.drgayno.contactstracer.ui.dashboard.DashboardViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/grid_3" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/grid_3" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            tools:ignore="ScrollViewCount">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="@dimen/grid_3" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="@dimen/grid_3" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_mid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.4" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animated_view_running"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:importantForAccessibility="no"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline_mid"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_end"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_start"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_enableMergePathsForKitKatAndAbove="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/ic_bluetooth_active"
+                    app:visibleOrGone="@{viewModel.serviceRunning}" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animated_view_paused"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:importantForAccessibility="no"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline_mid"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_end"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_start"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_enableMergePathsForKitKatAndAbove="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/ic_bluetooth_pause"
+                    app:visibleOrGone="@{!viewModel.serviceRunning}" />
+
+                <TextView
+                    android:id="@+id/app_running_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/grid_1"
+                    android:text="@string/dashboard_title_running"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@color/green"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/animated_view_running"
+                    app:visibleOrGone="@{viewModel.serviceRunning}" />
+
+                <TextView
+                    android:id="@+id/app_paused_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/grid_1"
+                    android:text="@string/dashboard_title_paused"
+                    android:textAlignment="center"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@color/orange"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                    app:layout_constraintStart_toStartOf="@id/guideline_start"
+                    app:layout_constraintTop_toBottomOf="@+id/animated_view_paused"
+                    app:visibleOrGone="@{!viewModel.serviceRunning}" />
+
+                <TextView
+                    android:id="@+id/app_running_body"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/grid_2"
+                    android:layout_marginBottom="@dimen/grid_1"
+                    android:text="@string/dashboard_body"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                    app:layout_constraintStart_toStartOf="@id/guideline_start"
+                    app:layout_constraintTop_toBottomOf="@id/app_running_title"
+                    app:visibleOrGone="@{viewModel.serviceRunning}"
+                    tools:layout_editor_absoluteX="@dimen/grid_2"
+                    tools:layout_editor_absoluteY="@dimen/grid_2" />
+
+                <TextView
+                    android:id="@+id/app_running_body_secondary"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/grid_1"
+                    android:layout_marginBottom="@dimen/grid_1"
+                    android:paddingBottom="80dp"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@color/colorOnSurface"
+                    app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                    app:layout_constraintStart_toStartOf="@id/guideline_start"
+                    app:layout_constraintTop_toBottomOf="@id/app_running_body"
+                    app:visibleOrGone="@{viewModel.serviceRunning}"
+                    tools:layout_editor_absoluteX="@dimen/grid_2"
+                    tools:layout_editor_absoluteY="@dimen/grid_2"
+                    tools:text="@string/dashboard_not_verified_secondary" />
+
+                <TextView
+                    android:id="@+id/app_paused_body"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/grid_1"
+                    android:layout_marginBottom="@dimen/grid_1"
+                    android:paddingBottom="80dp"
+                    android:text="@string/dashboard_body_paused"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                    app:layout_constraintStart_toStartOf="@id/guideline_start"
+                    app:layout_constraintTop_toBottomOf="@id/app_paused_title"
+                    app:visibleOrGone="@{!viewModel.serviceRunning}"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="16dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/verify_phone_number"
+            style="@style/OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/grid_1"
+            android:onClick="@{() -> viewModel.verifyPhoneNumber()}"
+            android:padding="@dimen/grid_2"
+            android:text="@string/verify_phone_number"
+            android:visibility="visible"
+            app:cornerRadius="@dimen/grid_0_5"
+            app:layout_constraintBottom_toTopOf="@+id/upload_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:visibleOrGone="@{viewModel.phoneNumberNotVerified}" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/upload_button"
+            style="?materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/grid_2"
+            android:onClick="@{() -> viewModel.pause()}"
+            android:padding="@dimen/grid_2"
+            android:text="@string/pause_app"
+            android:textColor="@color/orange"
+            app:cornerRadius="@dimen/grid_0_5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideline_right"
+            app:layout_constraintStart_toStartOf="@id/guideline_left"
+            app:strokeColor="@color/orange_dim"
+            app:visibleOrInvisible="@{viewModel.serviceRunning}" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/grid_2"
+            android:backgroundTint="@color/green"
+            android:onClick="@{() -> viewModel.start()}"
+            android:padding="@dimen/grid_2"
+            android:text="@string/start_app"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideline_right"
+            app:layout_constraintStart_toStartOf="@id/guideline_left"
+            app:visibleOrInvisible="@{!viewModel.serviceRunning}" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
